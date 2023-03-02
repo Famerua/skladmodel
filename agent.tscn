@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://dl5gww5vev2lb"]
+
+[ext_resource type="Script" path="res://agent.gd" id="1_83r85"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_efqlq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ay2gs"]
+
+[node name="Ant1" type="Node3D" groups=["agents"]]
+script = ExtResource("1_83r85")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_efqlq")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_ay2gs")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="RotationTimer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 0.5
+one_shot = true
+
+[node name="MoveTimer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 0.5
+one_shot = true
+
+[node name="LoadingTimer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 2.0
+one_shot = true
+
+[node name="UnloadingTimer" type="Timer" parent="."]
+process_callback = 0
+one_shot = true
+
+[node name="ChargingTimer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 720.0
+one_shot = true
+
+[node name="StartingTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="RotationTimer" to="." method="_on_rotation_timer_timeout"]
+[connection signal="timeout" from="MoveTimer" to="." method="_on_move_timer_timeout"]
+[connection signal="timeout" from="LoadingTimer" to="." method="_on_loading_timer_timeout"]
+[connection signal="timeout" from="UnloadingTimer" to="." method="_on_unloading_timer_timeout"]
+[connection signal="timeout" from="ChargingTimer" to="." method="_on_charging_timer_timeout"]

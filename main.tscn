@@ -1,0 +1,351 @@
+[gd_scene load_steps=7 format=3 uid="uid://o3ok86npvkcx"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_seokj"]
+[ext_resource type="Script" path="res://charger.gd" id="2_7qmmc"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_bet5d"]
+size = Vector3(0.9, 0.9, 0.9)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5nnr2"]
+albedo_color = Color(0.74902, 0.160784, 0.223529, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_goojj"]
+albedo_color = Color(0, 0.509804, 0.211765, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gp623"]
+albedo_color = Color(0, 0.462745, 0.603922, 1)
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_seokj")
+
+[node name="target14" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 9)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target13" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 8)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target12" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 7)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target11" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 5)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target10" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 3)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target9" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 2)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target8" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target7" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target6" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target5" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target1" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target15" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 10)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target16" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 10)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target17" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 10)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target18" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 10)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target19" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 10)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target20" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 10)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="target21" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="target21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5nnr2")
+
+[node name="loading_point" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="loading_point"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_goojj")
+
+[node name="charger1" type="Node3D" parent="." groups=["chargers"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+script = ExtResource("2_7qmmc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="charger1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_gp623")
+
+[node name="charger2" type="Node3D" parent="." groups=["chargers"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+script = ExtResource("2_7qmmc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="charger2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_gp623")
+
+[node name="charger3" type="Node3D" parent="." groups=["chargers"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 4)
+script = ExtResource("2_7qmmc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="charger3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_gp623")
+
+[node name="charger4" type="Node3D" parent="." groups=["chargers"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 6)
+script = ExtResource("2_7qmmc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="charger4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_gp623")
+
+[node name="charger6" type="Node3D" parent="." groups=["chargers"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 10)
+script = ExtResource("2_7qmmc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="charger6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_gp623")
+
+[node name="charger5" type="Node3D" parent="." groups=["chargers"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 10)
+script = ExtResource("2_7qmmc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="charger5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh = SubResource("BoxMesh_bet5d")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_gp623")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 4.51596, 8.01962, 5.81795)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, 0.433013, -0.25, 0, 0.5, 0.866025, 0.5, -0.75, 0.433013, 0, 8, -1)
+
+[node name="FPS" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Delivered" type="Label" parent="."]
+offset_top = 106.0
+offset_right = 40.0
+offset_bottom = 129.0
+
+[node name="Steps" type="Label" parent="."]
+offset_top = 25.0
+offset_right = 40.0
+offset_bottom = 48.0
+
+[node name="Time" type="Label" parent="."]
+offset_top = 68.0
+offset_right = 40.0
+offset_bottom = 91.0
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1033.0
+offset_top = 50.0
+offset_right = 1144.0
+offset_bottom = 105.0
+text = "START"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 1028.0
+offset_top = 3.0
+offset_right = 1148.0
+offset_bottom = 48.0
+text = "EnterCount"
+
+[node name="VScrollBar" type="VSlider" parent="."]
+visible = false
+offset_left = 1126.0
+offset_top = 120.0
+offset_right = 1142.0
+offset_bottom = 463.0
+min_value = 1.0
+max_value = 666.0
+value = 1.0
+exp_edit = true
+
+[node name="Label" type="Label" parent="VScrollBar"]
+layout_mode = 0
+offset_left = -26.0
+offset_top = 4.0
+offset_right = -2.0
+offset_bottom = 30.0
+
+[node name="StepsTimer" type="Timer" parent="."]
+
+[node name="write" type="Button" parent="."]
+offset_left = 1052.0
+offset_top = 586.0
+offset_right = 1140.0
+offset_bottom = 636.0
+text = "write"
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="value_changed" from="VScrollBar" to="." method="_on_v_scroll_bar_value_changed"]
+[connection signal="timeout" from="StepsTimer" to="." method="_on_steps_timer_timeout"]
+[connection signal="pressed" from="write" to="." method="_on_write_pressed"]
